@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма користувача</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f2f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgb(245, 216, 242);
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 5px;
+            background: #f2a7db;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c47bae;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Форма користувача</h2>
+
+        <input type="text" id="name" placeholder="Ім'я">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Телефон">
+        <input type="password" id="password" placeholder="Пароль">
+
+        <button onclick="saveData()">Зберегти</button>
+        <button onclick="login()">Увійти</button>
+        <button onclick="editData()">Редагувати</button>
+        <button onclick="clearData()">Очистити</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
