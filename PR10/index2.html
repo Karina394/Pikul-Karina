@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета користувача</title>
+</head>
+
+<body>
+    <h2>Анкета користувача</h2>
+    <form action="index2.php" method="post">
+        Ім’я: <br>
+        <input type="text" name="name" required><br><br>
+
+        Вік: <br>
+        <input type="text" name="age" required><br><br>
+
+        Стать: <br>
+        <input type="radio" name="gender" value="Чоловік"> Чоловік
+        <input type="radio" name="gender" value="Жінка"> Жінка
+        <br><br>
+
+        Хобі: <br>
+        <input type="checkbox" name="hobbies[]" value="Спорт"> Спорт
+        <input type="checkbox" name="hobbies[]" value="Музика"> Музика
+        <input type="checkbox" name="hobbies[]" value="Ігри"> Ігри
+        <br><br>
+
+        Короткий опис: <br>
+        <textarea name="description"></textarea><br><br>
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+</body>
+
+</html>
